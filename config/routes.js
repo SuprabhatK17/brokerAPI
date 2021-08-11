@@ -33,20 +33,12 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  // Broker routes
+
   'POST /broker' : 'BrokerController.createBroker',
   'GET /broker'  : 'BrokerController.findBroker',
   'GET /broker/:id' : 'BrokerController.findBrokerById',
   'PATCH /broker/:id' : 'BrokerController.updateBroker',
-  'DELETE /broker/:id' : 'BrokerController.deleteBroker',
+  'DELETE /broker/:id' : 'BrokerController.deleteBroker'
 
-  // Lead routes
-  'POST /lead' : 'LeadController.createLead',
-  'GET /lead'  : 'LeadController.findLead',
-  'GET /lead/:id' : 'LeadController.findLeadById',
-  'PATCH /lead/:id' : 'LeadController.updateLead',
-  'DELETE /lead/:id' : 'LeadController.deleteLead',
 
-  // pagiantion route 
-  'GET /lead':'LeadController.GetLead',
 };
